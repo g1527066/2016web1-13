@@ -3,8 +3,21 @@ var separate_time=function(time){
   var min=Math.floor((time/1000/60)%60);
   var hours=Math.floor((time/1000/60/60)%24);
   var days=Math.floor(time/1000/60/60/24);
+  
+  var sec=time.getSeconds();
+  
+  
   return [sec,min,hours,days];
   }
+  
+  var now =new Date();
+  var counter=separare_time(now);
+  document.getElementById('countdown').textContent=
+  counter+'秒'+;
+  
+  
+  
+  
   var update=function(){
   refresh();//タイマー起動
   }
