@@ -6,6 +6,9 @@ var separate_time=function(time){
   return [sec,min,hours,days];
   }
   
+document.getElementById('form').select.onchange=function(){
+  location.href=document.getElementById('form').select.value;
+}
 
   
   
