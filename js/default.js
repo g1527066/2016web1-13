@@ -4,7 +4,7 @@ var separate_time=function(time){
   var hours=Math.floor((time/1000/60/60)%24);
   var days=Math.floor(time/1000/60/60/24);
   
-  var sec=time.getSeconds();
+  //var sec=time.getSeconds();
   
   
   return [sec,min,hours,days];
