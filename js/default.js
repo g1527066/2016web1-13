@@ -11,7 +11,7 @@ var separate_time=function(time){
   }
   
   var now =new Date();
-  var counter=separare_time(now);
+  var counter=separate_time(now);
   document.getElementById('countdown').textContent=
   counter[0]+'秒';
   
