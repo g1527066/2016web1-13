@@ -10,10 +10,6 @@ document.getElementById('form').select.onchange=function(){
   location.href=document.getElementById('form').select.value;
 }
 
-  
-  
-  
-  
   var update=function(){
      var now =new Date();
      target=new Date(2020,7,24,0,0,0,0);
@@ -64,3 +60,12 @@ document.getElementById('form').select.onchange=function(){
       return "";
   }
   
+  var last_date=getCookie('lastDate');
+  if(last_date){
+    document.getElementById('cookie').textContent='前回訪れた時間:'+last_date;
+  }else{
+    document.getElementById('cookie').textContent='はじめまして';
+  }
+
+var current_time=new Date();
+setCookie('lastDate',current_time.toString(),7);
